@@ -61,7 +61,8 @@ def add_s(array)
 end
 
 def kesha_maker(array)
-  array.collect do |i|
+  array.delete_if.collect do |i|
+    i[2] = '' 
     i.insert(2, "$")
   end
   array
