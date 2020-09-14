@@ -59,3 +59,10 @@ def add_s(array)
   end
   array
 end
+
+def kesha_maker(array)
+  array.collect do |i|
+    i.insert(2, "$")
+  end
+  print array
+end
